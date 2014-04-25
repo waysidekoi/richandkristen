@@ -1,0 +1,34 @@
+@import "settings";
+@import "foundation.scss";
+@import "style";
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300|Bitter|Gilda+Display:400|Source+Sans+Pro:400|Niconne:400|Dancing+Script|Lato|Oswald);
+
+
+header {
+  @include grid-row;
+
+  .logo  { @include grid-column($columns:3, $center:true); }
+  padding-bottom: em-calc(10px);
+
+}
+
+
+.main-content {
+  @include grid-row;
+
+  aside  {
+    @include grid-column($columns:6);
+    // @media #{$medium-up} {
+    //   @include grid-column($columns:3);
+    // }
+  }
+
+  article  {
+    @include grid-column($columns:6);
+    // @media #{$medium-up} {
+    //   @include grid-column($columns:8, $offset: 1);
+    // }
+  }
+
+}
+

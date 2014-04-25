@@ -1,0 +1,20 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= data.page.title %></title>
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <%= stylesheet_link_tag "app", "style" %>
+    <%= javascript_include_tag "modernizr" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= yield %>
+    <%= partial "footer" %>
+
+    <%= javascript_include_tag  "all" %>
+  </body>
+</html>
