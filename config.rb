@@ -108,5 +108,3 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
-
-::I18n.config.enforce_available_locales = false
