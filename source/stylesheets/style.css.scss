@@ -21,7 +21,8 @@
   padding-bottom: 1px;
 
   width: 50%;
-  margin: 51px auto 0;
+  margin: auto;
+  margin-bottom:15px;
 }
 .border {
   margin-bottom: 25px;
@@ -139,6 +140,9 @@ ul.snav a {
   .location .logo {
     background-color: #331E54;
   }
+  .section-border {
+    margin: 51px auto 0;
+  }
 
 }
 
@@ -154,6 +158,9 @@ ul.snav a {
     font-family: 'Oswald';
     font-size:2.25rem;
     color: lighten(black, 15%);
+  }
+  .section-border {
+    position:relative;
   }
   .sub-heading {
     margin-bottom: -7px;
