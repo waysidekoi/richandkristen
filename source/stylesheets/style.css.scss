@@ -25,8 +25,6 @@
   margin-bottom:15px;
 }
 .border {
-  margin-bottom: 25px;
-
   background: rgb(255,191,168); /* Old browsers */
   background: -moz-linear-gradient(left, rgba(255,191,168,1) 0%, rgba(255,127,80,1) 16%, rgba(255,191,168,1) 29%, rgba(255,127,80,1) 40%, rgba(255,191,168,1) 60%, rgba(255,127,80,1) 75%, rgba(255,127,80,1) 90%, rgba(255,191,168,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,191,168,1)), color-stop(16%,rgba(255,127,80,1)), color-stop(29%,rgba(255,191,168,1)), color-stop(40%,rgba(255,127,80,1)), color-stop(60%,rgba(255,191,168,1)), color-stop(75%,rgba(255,127,80,1)), color-stop(90%,rgba(255,127,80,1)), color-stop(100%,rgba(255,191,168,1))); /* Chrome,Safari4+ */
@@ -111,11 +109,10 @@ ul.snav a {
 }
 
 .big-day {
-  /* drop lower on account of sticky nav */
-  margin-top: 2rem;
   h2 {
     font-family: 'Merriweather';
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   h4 {
     font-family: "Merriweather";
@@ -141,7 +138,8 @@ ul.snav a {
     background-color: #331E54;
   }
   .section-border {
-    margin: 51px auto 0;
+    // margin: 51px auto 0;
+    margin: 2rem auto;
   }
 
 }
