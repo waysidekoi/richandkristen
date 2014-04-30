@@ -97,10 +97,47 @@ footer {
   .circle {
     width: 300px;
     height: 300px;
+    border-radius: 50%;
     border: 2px solid #e7e7e7;
+  }
+  .circular {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
   }
+  .cp {
+    @extend .circular;
+    background: url("/images/Courteney.jpg") no-repeat;
+  }
+  .k {
+    @extend .circular;
+    background: url("/images/Kim.jpg") no-repeat;
+  }
+  .s {
+    @extend .circular;
+    background: url("/images/Sneha.jpg") no-repeat;
+    background-size: 100%;
+  }
+  .a {
+    @extend .circular;
+    background: url("/images/Ann.jpg") no-repeat;
+  }
+  .thuy {
+    @extend .circular;
+    background: url("/images/Thuy.jpg") no-repeat;
+    background-size: 100%;
+  }
+  .n {
+    @extend .circular;
+    background: url("/images/Nicole.jpg") no-repeat 30px 0;
+    background-size: 70%;
+  }
+  .tr {
+    @extend .circular;
+    background: url("/images/Tricia.jpg") no-repeat;
+  }
 }
+
 /// experimental-styles ///
 /* sticky nav */
 ul.snav a {
