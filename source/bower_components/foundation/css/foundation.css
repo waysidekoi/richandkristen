@@ -2687,12 +2687,12 @@ label.error {
       display: inline-block;
       width: 0.5625rem;
       height: 0.5625rem;
-      background: #ccc;
+      background: #FFFFFF;
       float: none;
       margin-right: 6px;
       border-radius: 1000px; }
       .orbit-container .orbit-bullets li.active {
-        background: #999; }
+        background: red; }
       .orbit-container .orbit-bullets li:last-child {
         margin-right: 0; }
 
