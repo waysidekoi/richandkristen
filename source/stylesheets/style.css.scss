@@ -56,6 +56,7 @@
 }
 
 .blurbs {
+  margin-bottom: 4rem;
   .circle {
     width:50px;
     height:50px;
@@ -76,15 +77,41 @@
   }
 
 }
-footer {
-  border-top: 1px dotted #FF9670;
-  margin-top: 40px;
-  padding-top: 10px;
-  margin-bottom: 60px;
+.footer {
+  border-top: 1px solid #FF9670;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: gray;
+
+  .sig {
+    margin-top: 6rem;
+    span {
+      padding-left: 0;
+    }
+  }
+
+  h4 {
+    color: gray;
+    font-weight: bold;
+  }
 
   i {
     color: #FF9F7C;
+    padding-right: 0.5rem;
   }
+
+  span {
+    padding-left: 1rem;
+    color: gray;
+    font-weight: normal;
+  }
+  .border-right {
+    border-right: 1px solid #FF9670;
+  }
+}
+.footer-bg {
+  background-color: lighten(#FF9F7C, 22.5%);
 }
 .wed-party {
   h1 {
@@ -178,6 +205,17 @@ ul.snav a {
     margin: 2rem auto;
   }
 
+}
+
+.save-the-date {
+  margin: 6rem auto 9rem;
+  h1 {
+    font-family: 'Dancing Script';
+    color: #FF7F50;
+  }
+  h3,h4 {
+    font-family: 'Merriweather';
+  }
 }
 
 .our-story {
