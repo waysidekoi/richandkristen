@@ -48,6 +48,15 @@
   padding: 2% 0;
   margin-bottom: 2%;
 }
+.orbit-container .orbit-bullets {
+    display: block;
+    float: none;
+    margin: 0 auto 2px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
 .soft-yellow {
   background-image: url("/images/soft-yellow-bg.jpg");
   margin-bottom: 25px;
