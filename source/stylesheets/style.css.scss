@@ -77,6 +77,12 @@
   }
   .blurb-wrap {
     text-align: center;
+    img {
+      background: none;
+      padding: 0;
+      border: none;
+      vertical-align: inherit;
+    }
   }
   h3 {
     text-align:center;
