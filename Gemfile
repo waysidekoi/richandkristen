@@ -8,6 +8,8 @@ gem "puma"
 
 ruby '2.0.0'
 
+gem 'middleman-minify-html'
+
 # Live-reloading plugin
 gem "middleman-livereload"
 

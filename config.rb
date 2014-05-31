@@ -64,6 +64,12 @@ end
 # Helpers
 ###
 
+helpers do
+  def is_page_active(page)
+    current_page.url == page ? "class= 'active'" : nil
+  end
+end
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
@@ -90,6 +96,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 activate :livereload
+activate :minify_html
 
 # Build-specific configuration
 configure :build do
