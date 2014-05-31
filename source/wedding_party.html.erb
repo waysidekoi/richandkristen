@@ -44,7 +44,7 @@ title: Rich & Kristen
       <div class="small-5 small-offset-1 columns <%= f.css_class %>"></div>
       <div class="small-6 columns">
         <h4><%= f.full_name %></h4>
-        <p><%= f.bio %></p>
+        <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
       </div>
     </li>
     <% end %>
@@ -78,7 +78,7 @@ title: Rich & Kristen
       <div class="circle small-5 small-offset-1 columns <%= f.css_class %>"></div>
       <div class="small-6 columns">
         <h4><%= f.full_name %></h4>
-        <p><%= f.bio %></p>
+        <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
       </div>
     </li>
 
