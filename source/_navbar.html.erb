@@ -14,11 +14,11 @@
     <section class="top-bar-section">
 
       <ul class="right">
-        <li><a href="/">Home</a></li>
-        <li><a href="/our_story">Our Story</a></li>
-        <li><a href="/photos">Photos</a></li>
-        <li><a href="/info">Where/When/How</a></li>
-        <li><a href="/wedding_party">Wedding Party</a></li>
+        <li <%= is_page_active('/') %> ><%= link_to "Home", "/" %></li>
+        <li <%= is_page_active('/our_story/') %> ><%= link_to "Our Story", "/our_story" %></li>
+        <li <%= is_page_active('/photos/') %> ><%= link_to "Photos", "/photos" %></li>
+        <li <%= is_page_active('/info/') %> ><%= link_to "Where/When/How", "/info" %></li>
+        <li <%= is_page_active('/wedding_party/') %> ><%= link_to "Wedding Party", "/wedding_party" %></li>
       </ul>
 
     </section>

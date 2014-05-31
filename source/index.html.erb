@@ -1,33 +1,7 @@
 ---
 title: Rich & Kristen
 ---
-<div class="contain-to-grid">
-
-  <nav class="top-bar" data-topbar>
-    <ul class="title-area">
-      <li class="name">
-        <h1>
-          <a href="/">
-            Richard <span class="amp">&</span> Kristen
-          </a>
-        </h1>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#"></a></li>
-    </ul>
-
-    <section class="top-bar-section">
-
-      <ul class="right">
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="/our_story">Our Story</a></li>
-        <li><a href="/photos">Photos</a></li>
-        <li><a href="/info">Where/When/How</a></li>
-        <li><a href="/wedding_party">Wedding Party</a></li>
-      </ul>
-
-    </section>
-  </nav>
-</div>
+<%= partial "navbar" %>
 
 <div class="orbit-bg">
 
@@ -42,29 +16,12 @@ title: Rich & Kristen
                              resume_on_mouseout: true;
                                        bullets: false;">
 
-        <li>
-          <img data-interchange="images/4.jpg, (default)" alt="slide 1" />
-        </li>
 
+        <% [4, 10, 21, 29, 36, 80].each do |n| %>
         <li>
-          <img data-interchange="images/10.jpg, (default)" alt="slide 2" />
+          <img data-interchange="images/<%= n %>.jpg, (default)" />
         </li>
-
-        <li>
-          <img data-interchange="images/21.jpg, (default)" alt="slide 4" />
-        </li>
-
-        <li>
-          <img data-interchange="images/29.jpg, (default)" alt="slide 9" />
-        </li>
-
-        <li>
-          <img data-interchange="images/36.jpg, (default)" alt="slide 10" />
-        </li>
-
-        <li>
-          <img data-interchange="images/80.jpg, (default)" alt="slide 14" />
-        </li>
+        <% end %>
       </ul>
   </div>
 
