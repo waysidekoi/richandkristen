@@ -41,8 +41,8 @@ title: Rich & Kristen
 
     <% data.bridesmaids.each_with_index do |f, index| %>
     <li data-orbit-slide="g<%= index %>">
-      <div class="small-5 small-offset-1 columns <%= f.css_class %>"></div>
-      <div class="small-6 columns">
+      <div class="small-3 columns <%= f.css_class %>"></div>
+      <div class="small-8 columns">
         <h4><%= f.full_name %></h4>
         <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
       </div>
