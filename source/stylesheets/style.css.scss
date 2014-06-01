@@ -133,6 +133,7 @@
   background-color: lighten(#FF9F7C, 22.5%);
 }
 .wed-party {
+  margin-bottom: 2rem;
   h1 {
     font-family: 'Merriweather';
   }
@@ -200,6 +201,13 @@ ul.snav a {
     font-family: "Merriweather";
     font-size: 1.25rem;
     margin: 0.75rem 0;
+  }
+  .boxed {
+    padding-top: 1rem;
+    p {
+      margin-bottom: 1rem;
+    }
+    border: 1px solid gray;
   }
   .details {
     margin-bottom: 0.45em;
@@ -273,6 +281,13 @@ ul.snav a {
 }
 .dotted-frame {
   border: 1px dotted lighten(#999, 20%);
+}
+.fa-ul li:first-child{
+  margin-top: 0.25em;
+}
+.fa-li {
+  top: none;
+  line-height: inherit;
 }
 img {
   background: #fff;
