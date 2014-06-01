@@ -212,8 +212,16 @@ ul.snav a {
   .details {
     margin-bottom: 0.45em;
   }
+  .location {
+    a {
+      text-decoration: underline;
+    }
+  }
   .location .notes {
     margin-top: 1.5rem;
+    h5, h6 {
+      font-family: "Merriweather";
+    }
   }
   .location p {
     margin-bottom: 0; /* delgate to .details */

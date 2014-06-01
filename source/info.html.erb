@@ -9,11 +9,20 @@ title: Rich & Kristen
   <div data-magellan-expedition="fixed">
 
     <dl class="sub-nav">
-
-      <% %w(wedding_day_schedule bridal_party_schedule location hotels).each do |section| %>
-        <dd data-magellan-arrival="<%= section %>">
-        <%= link_to "#{section.split("_").map{|x| x.chr.upcase + x[1..-1]}.join("\s")}", "\##{section}" %>
-        </dd>
+      <% headings = [
+          { link_name: "wedding_day_schedule" },
+          { link_name: "bridal_party_schedule"},
+          { link_name: "location" },
+          {
+            link_name: "other_hotels",
+            section_id: "hotels"
+          }
+        ]
+      %>
+      <% headings.each do |section| %>
+      <dd data-magellan-arrival="<%= section[:section_id] ? section[:section_id] : section[:link_name] %>">
+        <%= link_to "#{section[:link_name].split("_").map{|x| x.chr.upcase + x[1..-1]}.join("\s")}", "\##{section[:section_id] ? section[:section_id] : section[:link_name]}" %>
+      </dd>
       <% end %>
 
     </dl>
@@ -118,7 +127,7 @@ title: Rich & Kristen
 
   <div data-magellan-destination="location" class="row">
   <a name="location"></a>
-    <h2>Location</h2>
+    <h2>Wedding Ceremony & Reception Venues</h2>
     <div class="location small-12 large-6 columns">
       <img src="images/col.jpg" />
       <h4>The Catholic Community of Christ Our Light</h4>
@@ -197,7 +206,26 @@ title: Rich & Kristen
         </div>
 
         <div class="notes">
-          <h5>Self Parking:</h5>
+          <h5><strong>Reservations</strong></h5>
+          <p>For hotel reservations, visit: <%= link_to "Hyatt Reservations", "https://resweb.passkey.com/go/palisramones" %></p>
+          <p><i class="fa fa-star"></i>To receive the preferred rate, reservations must be made by <strong>July 3, 2014</strong></p>
+          <br />
+          <h5><strong>Directions</strong></h5>
+          <h6>From I-95</h6>
+          <p>Take I-95 to Exit 20 (Washington Avenue/Columbus Boulevard). Make a left onto Columbus Boulevard. Our hotel is located one mile north on the right.</p>
+          <br />
+          <h6>From the Ben Franklin Bridge</h6>
+          <p>Once over the bridge in Philadelphia, travel on the ramp towards I-95. Take I-95 South to Exit 20 (Washington Avenue/Columbus Boulevard). Make a left onto Columbus Boulevard. Our hotel is located one mile north on the right.</p>
+          <br />
+          <h6>From the Walt Whitman Bridge</h6>
+          <p>Once over the bridge in Philadelphia, bear to the right towards I-95. Take I-95 North to Exit 20 (Washington Avenue/Columbus Boulevard). Make a left onto Columbus Boulevard. Our hotel is located one mile north on the right.</p>
+          <br />
+          <h6>From the Philadelphia Suburbs</h6>
+          <p>Take I-76 East to I-676 East. Continue on I-676 East to I-95 South. Take I-95 South to Exit 20 (Washington Avenue/Columbus Boulevard). Make a left onto Columbus Boulevard. Our hotel is located one mile north on the right.</p>
+          <br />
+             
+          <h5><strong>Parking</strong></h5>
+          <h6>Self Parking:</h6>
           <ul class="no-bullet">
             <li>
               <ul>
@@ -207,7 +235,7 @@ title: Rich & Kristen
             </li>
           </ul>
 
-          <h5>Valet:</h5>
+          <h6>Valet:</h6>
           <ul class="no-bullet">
             <li>
               <ul>
@@ -225,7 +253,7 @@ title: Rich & Kristen
 
   <div data-magellan-destination="hotels" class="row">
     <a name="hotels"></a>
-    <h2>Hotels</h2>
+    <h2>Other Hotels - Near the Hyatt</h2>
     <h4><%= link_to "Sheraton Society Hill", "http://www.pennsviewhotel.com/" %><br />1 Dock Street, Philadelphia, PA 19106<br />(215) 238-6000</h4>
     <h4><%= link_to "Best Western Plus Independence Park Hotel", "http://www.independenceparkhotel.com/" %><br />235 Chestnut Street, Philadelphia, PA 19106<br />(215) 922-4473</h4>
     <h4><%= link_to "Crown Plaza", "http://www.crowneplaza.com/hotels/us/en/cherry-hill/cpcrw/hoteldetail/" %><br />2349 W. Marlton Pike, Cherry Hill, NJ 08002<br/>(856) 665-6666</h4>
