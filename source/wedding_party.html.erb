@@ -34,7 +34,7 @@ title: Rich & Kristen
 
     <% data.bridesmaids.each_with_index do |f, index| %>
     <li data-orbit-slide="g<%= index %>">
-      <div class="small-3 columns <%= f.css_class %>"></div>
+    <div class="small-3 columns circular" style="background: url('/images/bridal_party/<%= f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
       <div class="small-8 columns">
         <h4><%= f.full_name %></h4>
         <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
@@ -68,7 +68,7 @@ title: Rich & Kristen
     <% data.groomswomen.each_with_index do |f, index| %>
 
     <li data-orbit-slide="gw<%= index %>">
-      <div class="circle small-3 columns <%= f.css_class %>"></div>
+      <div class="small-3 columns circular" style="background: url('/images/bridal_party/<%= f.photo ? f.photo : f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
       <div class="small-8 columns">
         <h4><%= f.full_name %></h4>
         <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
@@ -103,7 +103,7 @@ title: Rich & Kristen
     <% data.groomsmen.each_with_index do |f, index| %>
 
     <li data-orbit-slide="b<%= index %>">
-      <div class="circle small-3 columns <%= f.css_class %>"></div>
+      <div class="small-3 columns circular" style="background: url('/images/bridal_party/<%= f.photo ? f.photo : f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
       <div class="small-8 columns">
         <h4><%= f.full_name %></h4>
         <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
