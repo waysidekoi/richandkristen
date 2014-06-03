@@ -35,8 +35,8 @@ title: Rich & Kristen
 
     <% data.bridesmaids.each_with_index do |f, index| %>
     <li data-orbit-slide="g<%= index %>">
-      <div class="small-12 large-4 small-centered large-uncentered columns circular" style="background: url('/images/bridal_party/<%= f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
-      <div class="small-12 large-8 columns bio">
+      <div class="mm small-12 medium-3 medium-uncentered large-4 small-centered large-uncentered columns circular" style="background: url('/images/bridal_party/<%= f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
+      <div class="small-12 medium-7 large-8 columns bio">
         <h4 class="full-name"><%= f.full_name %></h4>
         <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
       </div>
@@ -70,8 +70,8 @@ title: Rich & Kristen
     <% data.groomswomen.each_with_index do |f, index| %>
 
     <li data-orbit-slide="gw<%= index %>">
-      <div class="small-12 large-4 small-centered large-uncentered columns circular" style="background: url('/images/bridal_party/<%= f.photo ? f.photo : f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
-      <div class="small-12 large-8 columns bio">
+      <div class="small-12 medium-centered large-4 small-centered large-uncentered columns circular" style="background: url('/images/bridal_party/<%= f.photo ? f.photo : f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
+      <div class="small-12 medium-12 large-8 columns bio">
         <h4 class="full-name"><%= f.full_name %></h4>
         <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
       </div>
@@ -106,8 +106,8 @@ title: Rich & Kristen
     <% data.groomsmen.each_with_index do |f, index| %>
 
     <li data-orbit-slide="b<%= index %>">
-      <div class="small-12 large-4 small-centered large-uncentered columns circular" style="background: url('/images/bridal_party/<%= f.photo ? f.photo : f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
-      <div class="small-12 large-8 columns bio">
+      <div class="mm small-12 medium-3 medium-uncentered large-4 small-centered large-uncentered columns circular" style="background: url('/images/bridal_party/<%= f.photo ? f.photo : f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
+      <div class="small-12 medium-7 large-8 columns bio">
         <h4 class="full-name"><%= f.full_name %></h4>
         <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
       </div>
