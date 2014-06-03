@@ -42,9 +42,13 @@
 @media only screen and (max-width: 40em) {
   .top-bar .name h1 a {
     display: inline;
+    text-align: center;
     padding-left: 26.6667px !important;
   }
 
+  .xy {
+    display: none;
+  }
   // index
   .save-the-date {
     margin-top: 1rem !important;
@@ -52,6 +56,12 @@
   }
   .blurbs {
     margin-bottom: 0 !important;
+    h3 {
+      font-size: 1em;
+    }
+  }
+  .orbit-bg {
+    padding: 5% 0 !important;
   }
 
   // wedding_party
