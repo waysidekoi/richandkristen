@@ -1,24 +1,118 @@
 @import "settings";
 @import "foundation.scss";
 @import "style";
-@import url(http://fonts.googleapis.com/css?family=Merriweather:300|Gilda+Display:400|Source+Sans+Pro:400|Dancing+Script|Oswald);
+// @import url(http://fonts.googleapis.com/css?family=Merriweather:300|Gilda+Display:400|Source+Sans+Pro:400|Dancing+Script|Oswald);
 
 @font-face {
-  font-family: 'chunk-webfont';
-  src: url('../../includes/fonts/chunk-webfont.eot');
-  src: url('../../includes/fonts/chunk-webfont.eot?#iefix') format('eot'),
-  url('../../includes/fonts/chunk-webfont.svg') format('svg'),
-  url('../../includes/fonts/chunk-webfont.woff') format('woff'),
-  url('../../includes/fonts/chunk-webfont.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Dancing Script';
   font-style: normal;
+  font-weight: 400;
+  src: local('Dancing Script'), local('DancingScript'), url(/fonts/dancingscript.woff) format('woff');
+}
+@font-face {
+  font-family: 'Gilda Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gilda Display'), local('GildaDisplay-Regular'), url(/fonts/gildadisplay.woff) format('woff');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Merriweather Light'), local('Merriweather-Light'), url(/fonts/merriweather.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(/fonts/oswald.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(/fonts/sourcesanspro.woff) format('woff');
 }
 
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-  font-family: 'chunk-webfont';
-  src: url('../../includes/fonts/chunk-webfont.svg') format('svg');
+}
+
+// Small
+@media only screen and (max-width: 40em) {
+  .top-bar .name h1 a {
+    display: inline;
+    padding-left: 26.6667px !important;
   }
+
+  // index
+  .save-the-date {
+    margin-top: 1rem !important;
+    margin-bottom: 3rem !important;
+  }
+  .blurbs {
+    margin-bottom: 0 !important;
+  }
+
+  // wedding_party
+  .wed-party {
+    margin-bottom: 0 !important;
+
+    h2 {
+      text-align:center;
+    }
+    .sub-nav dt, .sub-nav dd, .sub-nav li {
+      margin-left: 0;
+    }
+    .sub-nav {
+      margin-bottom: 0;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+  .bio {
+    margin-top: 0.5rem;
+  }
+  .full-name {
+    font-size: 23px;
+    text-align:center;
+  }
+
+  //info
+  .info-nav {
+    display: none;
+  }
+
+  //footer
+  .footer {
+    .border-right {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+    .sig {
+      margin-top: 3rem !important;
+    }
+  }
+}
+
+// Medium
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+  .title-area {
+    width: 100%;
+    padding-left: 26.6667px;
+  }
+  .top-bar-menu {
+    float: none !important;
+  }
+  .girls, .boys, .gw {
+    margin: 0 26px;
+  }
+  .wed-party {
+    .bio {
+      padding: 0 26px;
+    }
+  }
+
 }
 
 @media only screen and (min-width: 64.063em) {
