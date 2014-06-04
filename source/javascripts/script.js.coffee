@@ -28,7 +28,7 @@ $ ->
 
   $(".circular").on "mouseenter", (e) ->
     image = $(e.target).css('background-image')
-    name = /\w+-\w+.jpg/.exec(image)[0]
+    name = /\w+\-\w+.jpg/.exec(image)[0]
     michaelRegex = /^Michael-\w+.jpg$/
     michael1Regex = /^Michael1-\w+.jpg$/
     marcRegex = /^Marc?\w+\.jpg$/
