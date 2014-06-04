@@ -28,19 +28,22 @@ $ ->
 
   $(".circular").on "mouseenter", (e) ->
     image = $(e.target).css('background-image')
-    name = /\w+\.jpg/.exec(image)
+    name = /\w+\.jpg/.exec(image)[0]
+    michaelRegex = /^Michael-\w+.jpg$/
+    michael1Regex = /^Michael1-\w+.jpg$/
+    marcRegex = /^Marc?\w+\.jpg$/
+    marc1Regex = /^Marc1?\w+\.jpg$/
 
-    switch (name[0])
-      when "Michael.jpg"
+    if michaelRegex.test(name)
         $(e.target).css('background', "url('/images/bridal_party/Michael1.jpg') no-repeat")
         $(e.target).css('background-size', "cover")
-      when "Michael1.jpg"
+    else if michael1Regex.test(name)
         $(e.target).css('background', "url('/images/bridal_party/Michael.jpg') no-repeat")
         $(e.target).css('background-size', "cover")
-      when "Marc.jpg"
+    else if marcRegex.test(name)
         $(e.target).css('background', "url('/images/bridal_party/Marc1.jpg') no-repeat")
         $(e.target).css('background-size', "cover")
-      when "Marc1.jpg"
+    else if marc1Regex.test(name)
         $(e.target).css('background', "url('/images/bridal_party/Marc.jpg') no-repeat")
         $(e.target).css('background-size', "cover")
 
