@@ -6,7 +6,7 @@ title: Rich & Kristen
 <div class="orbit-bg show-for-small-only">
   <div class="index-slick show-for-small-only">
     <% [4, 10, 21, 29, 36, 80].each do |n| %>
-      <div><%= tag :img, src: "images/#{n}.jpg" %></div>
+      <div><%= image_tag "images/#{n}.jpg" %></div>
     <% end %>
   </div>
 </div>
@@ -62,7 +62,7 @@ title: Rich & Kristen
     <a href="/info">
       <div class="circle">
         <div class="blurb-wrap text-center">
-          <%= tag :img, src: "images/icon-church.png" %>
+          <%= image_tag "images/icon-church.png" %>
         </div>
       </div>
     </a>
@@ -74,7 +74,7 @@ title: Rich & Kristen
     <a href="/info#location">
       <div class="circle">
         <div class="blurb-wrap text-center">
-          <%= tag :img, src: "images/car.png" %>
+          <%= image_tag "images/car.png" %>
         </div>
       </div>
     </a>
