@@ -1,38 +1,38 @@
 @import "settings";
 @import "foundation.scss";
 @import "style";
-// @import url(http://fonts.googleapis.com/css?family=Merriweather:300|Gilda+Display:400|Source+Sans+Pro:400|Dancing+Script|Oswald);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300|Gilda+Display:400|Source+Sans+Pro:400|Dancing+Script|Oswald);
 
-@font-face {
-  font-family: 'Dancing Script';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Dancing Script'), local('DancingScript'), url(/fonts/dancingscript.woff) format('woff');
-}
-@font-face {
-  font-family: 'Gilda Display';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Gilda Display'), local('GildaDisplay-Regular'), url(/fonts/gildadisplay.woff) format('woff');
-}
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Merriweather Light'), local('Merriweather-Light'), url(/fonts/merriweather.woff) format('woff');
-}
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url(/fonts/oswald.woff) format('woff');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(/fonts/sourcesanspro.woff) format('woff');
-}
+// @font-face {
+//   font-family: 'Dancing Script';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Dancing Script'), local('DancingScript'), url(/fonts/dancingscript.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'Gilda Display';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Gilda Display'), local('GildaDisplay-Regular'), url(/fonts/gildadisplay.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'Merriweather';
+//   font-style: normal;
+//   font-weight: 300;
+//   src: local('Merriweather Light'), local('Merriweather-Light'), url(/fonts/merriweather.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'Oswald';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Oswald Regular'), local('Oswald-Regular'), url(/fonts/oswald.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'Source Sans Pro';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(/fonts/sourcesanspro.woff) format('woff');
+// }
 
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
