@@ -3,15 +3,15 @@ title: Rich & Kristen
 ---
 <%= partial "navbar" %>
 
-<div class="row border">
-</div>
+<div class="row border"></div>
 
+<div class="show-for-small-only small-12 columns"><h4>** The wedding party page may be buggy on mobile :( Please view on desktop! -wayne</h4></div>
 <div class="row girls wed-party">
 
   <br />
   <h2>The Bridesmaids</h2>
 
-  <dl class="sub-nav">
+  <dl class="sub-nav hide-for-small-only">
 
   <% data.bridesmaids.each_with_index do |f, index| %>
     <dd <%= index.zero? ? "class='active'" : nil %>>
@@ -24,7 +24,45 @@ title: Rich & Kristen
 </div>
 
 <div class="row wed-party">
-  <ul id="girls" data-orbit data-options="timer_speed: 25000;
+  <!-- <ul class="tabs show&#45;for&#45;small&#45;only" data&#45;tab> -->
+  <!--   <% data.bridesmaids.each_with_index do |f, index| %> -->
+
+  <!--   <li class="tab&#45;title <%= index.zero? ? 'active' : nil %>"> -->
+  <!--     <%= link_to f.first_name, "girls&#45;#{index}" %> -->
+  <!--   </li> -->
+
+  <!--   <% end %> -->
+  <!-- </ul> -->
+
+  <!-- <div class="tabs&#45;content show&#45;for&#45;small&#45;only"> -->
+
+  <!--   <% data.bridesmaids.each_with_index do |f, index| %> -->
+
+  <!--     <div class="content <%= index.zero? ? 'active' : nil %>" id="girls&#45;<%= index %>"> -->
+  <!--       <div class="mm small&#45;12 medium&#45;3 medium&#45;uncentered large&#45;4 small&#45;centered large&#45;uncentered columns circular" style="background: url('/images/bridal_party/<%= f.first_name %>.jpg') no&#45;repeat; background&#45;size: cover;"></div> -->
+  <!--       <div class="small&#45;12 medium&#45;7 large&#45;8 columns bio"> -->
+  <!--         <h4 class="full&#45;name"><%= f.full_name %></h4> -->
+  <!--         <p><%= f.bio.gsub("\n","<br/><br/>") %></p> -->
+  <!--       </div> -->
+  <!--     </div> -->
+
+  <!--   <% end %> -->
+
+  <!-- </div> -->
+
+  <div class="girls-slick show-for-small-only">
+    <% data.bridesmaids.each_with_index do |f, index| %>
+    <div>
+      <div class="circular" style="background: url('/images/bridal_party/<%= f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
+      <div class="bio">
+        <h4 class="full-name"><%= f.full_name %></h4>
+        <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+  <ul id="girls" class="hide-for-small-only" data-orbit data-options="timer_speed: 25000;
                             pause_on_hover: true;
                             next_on_click: false;
                             slide_number: false;
@@ -34,6 +72,7 @@ title: Rich & Kristen
                             resume_on_mouseout: false;">
 
     <% data.bridesmaids.each_with_index do |f, index| %>
+
     <li data-orbit-slide="g<%= index %>">
       <div class="mm small-12 medium-3 medium-uncentered large-4 small-centered large-uncentered columns circular" style="background: url('/images/bridal_party/<%= f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
       <div class="small-12 medium-7 large-8 columns bio">
@@ -41,24 +80,47 @@ title: Rich & Kristen
         <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
       </div>
     </li>
+
     <% end %>
+
   </ul>
 
 </div>
 
+<div class="show-for-small-only">
+  <br/>
+  <div class="row border"></div>
+  <br/>
+</div>
+
 <div class="row gw wed-party">
   <h2>The Groomswomen</h2>
-  <dl class="sub-nav">
+  <dl class="sub-nav hide-for-small-only">
   <% data.groomswomen.each_with_index do |f, index| %>
     <dd <%= index.zero? ? "class='active'" : nil %>>
       <a data-orbit-link="gw<%= index %>"><%= f.first_name %></a>
     </dd>
   <% end %>
   </dl>
+
 </div>
 
 <div class="row wed-party">
-  <ul id="groomswomen" data-orbit data-options="timer_speed: 25000;
+  <div class="gw-slick show-for-small-only">
+    <% data.groomswomen.each_with_index do |f, index| %>
+    <div>
+
+      <div class="circular" style="background: url('/images/bridal_party/<%= f.photo ? f.photo : f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
+      <div class="bio">
+        <h4 class="full-name"><%= f.full_name %></h4>
+        <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
+      </div>
+
+    </div>
+    <% end %>
+  </div>
+
+  <ul id="groomswomen" class="hide-for-small-only" data-orbit data-options="timer_speed: 25000;
                             pause_on_hover: true;
                             next_on_click: false;
                             slide_number: false;
@@ -82,9 +144,15 @@ title: Rich & Kristen
   </ul>
 </div>
 
+<div class="show-for-small-only">
+  <br/>
+  <div class="row border"></div>
+  <br/>
+</div>
+
 <div class="row boys wed-party">
   <h2>The Groomsmen</h2>
-  <dl class="sub-nav">
+  <dl class="sub-nav hide-for-small-only">
   <% data.groomsmen.each_with_index do |f, index| %>
     <dd <%= index.zero? ? "class='active'" : nil %>>
       <a data-orbit-link="b<%= index %>"><%= f.first_name %></a>
@@ -94,7 +162,21 @@ title: Rich & Kristen
 </div>
 
 <div class="row wed-party">
-  <ul id="boys" data-orbit data-options="timer_speed: 25000;
+  <div class="boys-slick show-for-small-only">
+    <% data.groomsmen.each_with_index do |f, index| %>
+    <div>
+
+      <div class="circular" style="background: url('/images/bridal_party/<%= f.photo ? f.photo : f.first_name %>.jpg') no-repeat; background-size: cover;"></div>
+      <div class="bio">
+        <h4 class="full-name"><%= f.full_name %></h4>
+        <p><%= f.bio.gsub("\n","<br/><br/>") %></p>
+      </div>
+
+    </div>
+    <% end %>
+  </div>
+
+  <ul id="boys" class="hide-for-small-only" data-orbit data-options="timer_speed: 25000;
                             pause_on_hover: true;
                             next_on_click: false;
                             slide_number: false;

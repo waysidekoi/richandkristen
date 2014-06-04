@@ -65,14 +65,8 @@ end
 ###
 
 helpers do
-  def is_page_active(page, extra=nil)
-    if current_page.url == page 
-      "class= 'active'"
-    elsif extra
-      "class= '#{extra}'"
-    else
-      nil
-    end
+  def is_page_active(page)
+    current_page.url == page ? "class= 'active'" : nil
   end
 end
 
