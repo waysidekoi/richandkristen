@@ -47,8 +47,13 @@
   }
 
   // index
+  .slick-dots {
+    position: static !important;
+    margin: auto auto;
+
+  }
   .slick-slider {
-    margin-bottom: 4% !important;
+    margin-bottom: 0 !important;
   }
   .save-the-date {
     margin-top: 1rem !important;
@@ -61,7 +66,7 @@
     }
   }
   .orbit-bg {
-    padding: 5% 0 !important;
+    padding: 5% 0 2% !important;
   }
 
   // wedding_party

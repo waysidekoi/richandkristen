@@ -7,4 +7,5 @@ $ ->
     autoplaySpeed: 5000
     speed: 500
     dots: true
+    arrows: false
 
