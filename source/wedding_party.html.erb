@@ -10,7 +10,7 @@ title: Rich & Kristen
   <br />
   <h2>The Bridesmaids</h2>
 
-  <dl class="sub-nav visible-for-large-up">
+  <dl class="sub-nav show-for-large-up">
 
   <% data.bridesmaids.each_with_index do |f, index| %>
     <dd <%= index.zero? ? "class='active'" : nil %>>
@@ -36,7 +36,7 @@ title: Rich & Kristen
     <% end %>
   </div>
 
-  <ul id="girls" class="visible-for-large-up" data-orbit data-options="timer_speed: 25000;
+  <ul id="girls" class="show-for-large-up" data-orbit data-options="timer_speed: 25000;
                             pause_on_hover: true;
                             next_on_click: false;
                             slide_number: false;
@@ -69,7 +69,7 @@ title: Rich & Kristen
 
 <div class="row gw wed-party">
   <h2>The Groomswomen</h2>
-  <dl class="sub-nav visible-for-large-up">
+  <dl class="sub-nav show-for-large-up">
   <% data.groomswomen.each_with_index do |f, index| %>
     <dd <%= index.zero? ? "class='active'" : nil %>>
       <a data-orbit-link="gw<%= index %>"><%= f.first_name %></a>
@@ -94,7 +94,7 @@ title: Rich & Kristen
     <% end %>
   </div>
 
-  <ul id="groomswomen" class="visible-for-large-up" data-orbit data-options="timer_speed: 25000;
+  <ul id="groomswomen" class="show-for-large-up" data-orbit data-options="timer_speed: 25000;
                             pause_on_hover: true;
                             next_on_click: false;
                             slide_number: false;
@@ -126,7 +126,7 @@ title: Rich & Kristen
 
 <div class="row boys wed-party">
   <h2>The Groomsmen</h2>
-  <dl class="sub-nav visible-for-large-up">
+  <dl class="sub-nav show-for-large-up">
   <% data.groomsmen.each_with_index do |f, index| %>
     <dd <%= index.zero? ? "class='active'" : nil %>>
       <a data-orbit-link="b<%= index %>"><%= f.first_name %></a>
@@ -150,7 +150,7 @@ title: Rich & Kristen
     <% end %>
   </div>
 
-  <ul id="boys" class="visible-for-large-up" data-orbit data-options="timer_speed: 25000;
+  <ul id="boys" class="show-for-large-up" data-orbit data-options="timer_speed: 25000;
                             pause_on_hover: true;
                             next_on_click: false;
                             slide_number: false;
