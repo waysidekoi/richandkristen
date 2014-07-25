@@ -29,6 +29,20 @@
   margin: auto;
   margin-bottom:15px;
 }
+
+.empty-break {
+  height: 0.5em;
+}
+.break {
+  content: "§";
+  color: #FF9F7C;
+  margin: rem-calc(14) 0;
+  text-align: center;
+}
+.break:after {
+  content: "§";
+}
+
 .border {
   background: rgb(255,191,168); /* Old browsers */
   background: -moz-linear-gradient(left, rgba(255,191,168,1) 0%, rgba(255,127,80,1) 16%, rgba(255,191,168,1) 29%, rgba(255,127,80,1) 40%, rgba(255,191,168,1) 60%, rgba(255,127,80,1) 75%, rgba(255,127,80,1) 90%, rgba(255,191,168,1) 100%); /* FF3.6+ */
