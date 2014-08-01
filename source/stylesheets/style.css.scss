@@ -46,6 +46,10 @@
   content: "§";
 }
 
+.done {
+  text-decoration: line-through;
+}
+
 .border {
   background: rgb(255,191,168); /* Old browsers */
   background: -moz-linear-gradient(left, rgba(255,191,168,1) 0%, rgba(255,127,80,1) 16%, rgba(255,191,168,1) 29%, rgba(255,127,80,1) 40%, rgba(255,191,168,1) 60%, rgba(255,127,80,1) 75%, rgba(255,127,80,1) 90%, rgba(255,191,168,1) 100%); /* FF3.6+ */
